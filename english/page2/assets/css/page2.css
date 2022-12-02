@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+:root {
+  --yellow: #F8E16C;
+  --gray: #2E2F2F;
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 700;
+}
+
+span, p {
+  font-weight: 400;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 6px;
+  background-color: var(--gray);
+}
+#header > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#header > div:nth-child(1) > img {
+  max-width: 100%;
+  height: auto;
+}
+#header > div:nth-child(1) > strong {
+  font-size: 1.81rem;
+  color: var(--yellow);
+}
+#header > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  border-radius: 4px;
+  background-color: #fff;
+  max-width: 345px;
+  width: 100%;
+  padding-left: 12px;
+}
+#header > div:nth-child(2) > input {
+  flex: 1;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 100%;
+  border: 0;
+  padding: 0 10px;
+  color: #1e1e1e;
+}
+
+#main #stars {
+  background-image: url("../img/strangerThings.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+#main #stars > header {
+  padding-left: 6px;
+  padding-top: 21px;
+}
+#main #stars > header > h1 {
+  font-size: 24px;
+  color: #F7F9F7;
+}
+#main #stars > footer {
+  position: absolute;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  top: calc(100% - 30px);
+}
+#main #stars > footer > span {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 170px;
+  font-size: 26px;
+}
+#main #stars > footer > span:nth-child(1) {
+  background-color: red;
+}
+#main #stars > footer > span:nth-child(2) {
+  background-color: blue;
+  font-size: 20px;
+}
+#main #comments {
+  padding: 40px 0;
+  background-color: var(--gray);
+  border-bottom: 10px solid var(--yellow);
+}
+#main #comments > header > h1 {
+  font-size: 60px;
+  color: var(--yellow);
+  margin-left: 6px;
+}
+#main #comments > main {
+  padding: 0 9px;
+  margin-top: 22px;
+}
+#main #comments > main > p {
+  font-size: 25px;
+  font-weight: 300;
+  color: #F7F9F7;
+}
+#main #comments > footer {
+  margin-top: 50px;
+  margin-left: 36px;
+}
+#main #comments > footer > div {
+  display: flex;
+  align-items: center;
+}
+#main #comments > footer > div > img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 17px;
+}
+#main #comments > footer > div > div {
+  display: flex;
+  flex-direction: column;
+}
+#main #comments > footer > div > div > span {
+  font-weight: 100;
+  color: #F7F9F7;
+  font-size: 25px;
+}
+#main #texts {
+  padding: 45px 0;
+  border-bottom: 2px solid var(--yellow);
+}
+#main #texts > main {
+  padding: 0 36px;
+}
+#main #texts > main > p {
+  font-size: 25px;
+  font-weight: 300;
+  color: #000;
+}
+#main #texts > main > p + * {
+  margin-top: 30px;
+}
+#main #banner {
+  padding-top: 64px;
+  padding-bottom: 20px;
+}
+#main #banner > main {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 36px;
+}
+#main #banner > main > div:nth-child(1) {
+  margin-right: 42px;
+}
+#main #banner > main > div:nth-child(1) > img {
+  max-width: 100%;
+  height: auto;
+}
+#main #banner > main > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+#main #banner > main > div:nth-child(2) > strong {
+  font-size: 40px;
+  color: #000;
+}
+#main #banner > main > div:nth-child(2) > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#main #banner > main > div:nth-child(2) > div > img {
+  max-width: 100%;
+  height: auto;
+}
+#main #banner > main > div:nth-child(2) > div > span {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--gray);
+  padding: 10px 0;
+}
+#footer > div {
+  flex: 1;
+  text-align: center;
+}
+#footer > div > span {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+#footer > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#footer > ul > li {
+  margin-right: 31px;
+}
+
+/*# sourceMappingURL=index.css.map */
